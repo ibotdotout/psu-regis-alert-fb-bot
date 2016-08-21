@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4001:5000
+    environment:
+      - MESSENGER_VALIDATION_TOKEN=AAAAAAAAAAA
+      - MESSENGER_PAGE_ACCESS_TOKEN=kkkkkkkkkk
+      - MESSENGER_APP_SECRET=AAAAAAAAAAAAAAAAAA
